@@ -1,0 +1,121 @@
+{
+  "supplements": [
+    {
+      "id": 1,
+      "name": "Whey Protein",
+      "price": 40,
+      "image": "whey-protein.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Creatine Monohydrate",
+      "price": 30,
+      "image": "creatine-monohydrate.jpg"
+    },
+    { "id": 3, "name": "BCAA Powder", "price": 25, "image": "bcaa-powder.jpg" },
+    {
+      "id": 4,
+      "name": "Casein Protein",
+      "price": 45,
+      "image": "casein-protein.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pre-Workout Supplement",
+      "price": 35,
+      "image": "pre-workout.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Post-Workout Recovery",
+      "price": 50,
+      "image": "post-workout-recovery.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Multivitamins",
+      "price": 20,
+      "image": "multivitamins.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Omega-3 Fish Oil",
+      "price": 25,
+      "image": "omega-3-fish-oil.jpg"
+    },
+    { "id": 9, "name": "Glutamine", "price": 28, "image": "glutamine.jpg" },
+    {
+      "id": 10,
+      "name": "ZMA Supplement",
+      "price": 22,
+      "image": "zma-supplement.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Joint Support",
+      "price": 32,
+      "image": "joint-support.jpg"
+    }
+  ],
+  "equipment": [
+    { "id": 1, "name": "Dumbbells", "price": 50, "image": "dumbbells.jpg" },
+    { "id": 2, "name": "Kettlebell", "price": 40, "image": "kettlebell.jpg" },
+    {
+      "id": 3,
+      "name": "Resistance Bands",
+      "price": 15,
+      "image": "resistance-bands.jpg"
+    },
+    { "id": 4, "name": "Barbell", "price": 80, "image": "barbell.jpg" },
+    { "id": 5, "name": "Treadmill", "price": 700, "image": "treadmill.jpg" },
+    {
+      "id": 6,
+      "name": "Exercise Bench",
+      "price": 120,
+      "image": "exercise-bench.jpg"
+    },
+    { "id": 7, "name": "Jump Rope", "price": 10, "image": "jump-rope.jpg" },
+    {
+      "id": 8,
+      "name": "Medicine Ball",
+      "price": 35,
+      "image": "medicine-ball.jpg"
+    },
+    { "id": 9, "name": "Spin Bike", "price": 500, "image": "spin-bike.jpg" }
+  ],
+  "clothes": [
+    {
+      "id": 1,
+      "name": "Workout Shorts",
+      "price": 20,
+      "image": "workout-shorts.jpg"
+    },
+    { "id": 2, "name": "Gym T-Shirt", "price": 15, "image": "gym-tshirt.jpg" },
+    {
+      "id": 3,
+      "name": "Compression Leggings",
+      "price": 30,
+      "image": "compression-leggings.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Running Jacket",
+      "price": 50,
+      "image": "running-jacket.jpg"
+    },
+    { "id": 5, "name": "Sweatband", "price": 10, "image": "sweatband.jpg" },
+    { "id": 6, "name": "Gym Socks", "price": 8, "image": "gym-socks.jpg" },
+    {
+      "id": 7,
+      "name": "Training Hoodie",
+      "price": 45,
+      "image": "training-hoodie.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Fitness Tank Top",
+      "price": 25,
+      "image": "fitness-tank-top.jpg"
+    }
+  ]
+}
