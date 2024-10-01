@@ -1,32 +1,33 @@
 .home {
   text-align: center;
-  /* padding: 60px 40px; */
+  padding: 60px 40px;
   background: url("/public/images/home-background.jpg");
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100vw;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  /* margin: 30px auto; */
-  /* max-width: 900px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .home h1 {
-  font-size: 48px; /* Larger font size for prominence */
-  color: #333; /* Darker color for better contrast */
-  font-family: "Roboto Slab", serif; /* Premium font */
+  font-size: 48px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 20px;
-  letter-spacing: 1px; /* Increased letter spacing */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .home p {
   margin-top: 20px;
-  font-size: 20px; /* Larger font size for readability */
-  color: #666; /* Softer color for secondary text */
-  font-family: "Open Sans", sans-serif; /* Secondary font */
-  line-height: 1.8; /* Increased line-height for better readability */
-  max-width: 800px; /* Constrain the paragraph width for better readability */
+  font-size: 20px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,8 +39,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #4caf50; /* Premium button color */
-  border: none;
+  background-color: #4caf50;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;

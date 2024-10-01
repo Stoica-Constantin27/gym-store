@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 import { CartContext } from "../../context/CartContext";
 import "../../styles/store.css";
 
@@ -11,6 +12,7 @@ const Store = () => {
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch("/gym-products.json")
@@ -25,7 +27,6 @@ const Store = () => {
         setLoading(false);
       })
       .catch((error) => {
-        console.error("Error fetching the products:", error);
         setError(error);
         setLoading(false);
       });
@@ -42,18 +43,35 @@ const Store = () => {
   return (
     <div className="store">
       <h2>Store Products</h2>
+
+      <input
+        type="text"
+        placeholder="Search for products..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-bar"
+      />
+
       {Object.entries(products).map(([category, items]) => (
         <div key={category} className="category-section">
           <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
           <div className="product-list">
-            {items.map((product) => (
-              <div key={product.id} className="product-item">
-                <img src={`/images/${product.image}`} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p className="price">${product.price}</p>
-                <button onClick={() => addToCart(product)}>Add to Cart</button>
-              </div>
-            ))}
+            {items
+              .filter((product) =>
+                product.name.toLowerCase().includes(searchQuery.toLowerCase())
+              )
+              .map((product) => (
+                <div key={product.id} className="product-item">
+                  <Link to={`/product/${product.id}`}>
+                    <img src={`${product.image}`} alt={product.name} />
+                  </Link>
+                  <h3>{product.name}</h3>
+                  <p className="price">${product.price}</p>
+                  <button onClick={() => addToCart(product)}>
+                    Add to Cart
+                  </button>
+                </div>
+              ))}
           </div>
         </div>
       ))}

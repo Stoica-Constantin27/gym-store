@@ -1,4 +1,3 @@
-/* Store Page Styles */
 .store {
   padding: 20px;
   background-color: #f9f9f9;
@@ -9,10 +8,10 @@
 
 .store h2 {
   font-size: 36px;
-  color: #333;
+  color: #000;
   text-align: center;
   margin-bottom: 30px;
-  font-family: "Roboto Slab", serif; /* Premium font for the heading */
+  font-family: "Roboto Slab", serif;
 }
 
 .category-section {
@@ -21,7 +20,7 @@
 
 .category-section h3 {
   font-size: 28px;
-  color: #4caf50; /* Green color for category headings */
+  color: #2a9d8f;
   margin-bottom: 20px;
   font-family: "Roboto Slab", serif;
   text-align: center;
@@ -30,19 +29,19 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Spacing between items */
-  justify-content: center; /* Center align items */
+  gap: 20px;
+  justify-content: center;
 }
 
 .product-item {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  width: 30%; /* Adjust width to fit 3 items per row */
+  width: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Ensure content fits within rounded corners */
+  overflow: hidden;
 }
 
 .product-item img {
@@ -54,20 +53,20 @@
 
 .product-item h3 {
   font-size: 22px;
-  color: #333;
+  color: #000;
   margin: 10px 0;
-  font-family: "Open Sans", sans-serif; /* Secondary font for product names */
+  font-family: "Open Sans", sans-serif;
 }
 
 .product-item p.price {
   font-size: 18px;
-  color: #4caf50; /* Green color for price */
+  color: #000;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .product-item button {
-  background-color: #4caf50;
+  background-color: #2a9d8f;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -79,7 +78,7 @@
 }
 
 .product-item button:hover {
-  background-color: #45a049;
+  background-color: #2a9d8f;
   transform: translateY(-2px);
 }
 
@@ -89,6 +88,15 @@
 
 @media (max-width: 768px) {
   .product-item {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
   }
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
