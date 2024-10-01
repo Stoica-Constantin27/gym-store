@@ -1,22 +1,80 @@
-/* Gym Page Styles */
 .gym-info {
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  width: 80%;
-  max-width: 800px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
 }
 
 .gym-info h2 {
-  font-size: 28px;
-  color: #333;
-  text-align: center;
+  font-size: 36px;
   margin-bottom: 20px;
+  color: #333;
+}
+
+.gym-info h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #4caf50;
 }
 
 .gym-info p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.gym-info ul {
   font-size: 18px;
-  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  padding-left: 20px;
+  color: #444;
+}
+
+.gym-info li {
+  margin-bottom: 10px;
+}
+
+.gym-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.join-now-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-now-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.join-now-btn:active {
+  transform: translateY(0);
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonials p {
+  font-size: 18px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
 }

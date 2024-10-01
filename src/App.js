@@ -4,11 +4,12 @@ import Home from "./pages/Home";
 import Gym from "./pages/Gym";
 import Store from "./components/store/Store";
 import Cart from "./components/store/Cart";
+import ProductDetails from "./components/store/ProductDetails";
 import Navigation from "./components/Common/Navigation";
 import { CartProvider } from "./context/CartContext";
 import SignUp from "./components/Auth/SignUp";
 import LogIn from "./components/Auth/LogIn";
-
+import Footer from "./pages/Footer";
 function App() {
   return (
     <CartProvider>
@@ -22,7 +23,9 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<LogIn />} />
+            <Route path="/product/:id" element={<ProductDetails />} />{" "}
           </Routes>
+          <Footer />
         </div>
       </Router>
     </CartProvider>
