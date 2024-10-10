@@ -3,29 +3,28 @@ import { CartContext } from "../../context/CartContext";
 import "../../styles/cart.css";
 
 const Cart = () => {
-  const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
+  const { cartItems, addToCart, removeFromCart, clearCart } =
+    useContext(CartContext);
 
-  // Calculate total price
   const total = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
   );
 
-  // Calculate discount based on total amount
   const calculateDiscount = (totalAmount) => {
     if (totalAmount >= 2500) {
-      return 0.2; // 20% discount
+      return 0.2;
     } else if (totalAmount >= 1000) {
-      return 0.15; // 15% discount
+      return 0.15;
     } else if (totalAmount >= 300) {
-      return 0.1; // 10% discount
+      return 0.1;
     }
-    return 0; // No discount
+    return 0;
   };
 
   const discountRate = calculateDiscount(total);
-  const discountAmount = total * discountRate; // Calculate the discount amount
-  const finalTotal = total - discountAmount; // Final total after discount
+  const discountAmount = total * discountRate;
+  const finalTotal = total - discountAmount;
 
   return (
     <div className="cart">
@@ -36,15 +35,18 @@ const Cart = () => {
         <>
           {cartItems.map((item) => (
             <div className="cart-item" key={item.id}>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="cart-item-image"
+              />
               <p>
                 {item.name} - ${item.price} x {item.quantity}
               </p>
-              <button
-                className="remove"
-                onClick={() => removeFromCart(item.id)}
-              >
-                Remove
-              </button>
+              <div className="cart-controls">
+                <button onClick={() => addToCart(item)}>+</button>
+                <button onClick={() => removeFromCart(item.id)}>-</button>
+              </div>
             </div>
           ))}
           <div className="cart-total">

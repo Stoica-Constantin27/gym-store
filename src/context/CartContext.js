@@ -20,6 +20,7 @@ export const CartProvider = ({ children }) => {
           i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
         );
       }
+
       return [...prevItems, { ...item, quantity: 1 }];
     });
   };
@@ -39,9 +40,8 @@ export const CartProvider = ({ children }) => {
     );
   };
 
-  // Clear all items from the cart
   const clearCart = () => {
-    setCartItems([]); // Reset the cart items to an empty array
+    setCartItems([]);
   };
 
   return (

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../../styles/auth.css";
 
-const LogIn = () => {
+const LogIn = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,6 +19,10 @@ const LogIn = () => {
       storedUser.password === password
     ) {
       alert("Login successful!");
+
+      localStorage.setItem("loggedInUser", JSON.stringify(storedUser));
+
+      setIsLoggedIn(true);
       navigate("/");
     } else {
       setError("Invalid email or password");
@@ -40,6 +46,7 @@ const LogIn = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          autoComplete="new-password"
         />
         {error && <p className="error">{error}</p>}
         <button type="submit">Log In</button>
