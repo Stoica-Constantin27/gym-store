@@ -1,12 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const GymInfo = () => {
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const carouselImages = [
+    { src: "/carouselImages/gym.jpg", alt: "Gym Equipment" },
+    { src: "/carouselImages/personalTrainer.jpg", alt: "Personal Training" },
+    { src: "/carouselImages/groupClasses.jpg", alt: "Group Classes" },
+    { src: "/carouselImages/gym2.jpg", alt: "Yoga Session" },
+    { src: "/carouselImages/supplements.png", alt: "Gym Interior" },
+  ];
+
   return (
     <div className="gym-info">
       <h2>Welcome to Our Gym</h2>
 
-      <img src="your-gym-image-url-here.jpg" alt="Gym" className="gym-image" />
+      <Slider {...carouselSettings} className="gym-carousel">
+        {carouselImages.map((image, index) => (
+          <div key={index} className="carousel-slide">
+            <img src={image.src} alt={image.alt} className="carousel-image" />
+          </div>
+        ))}
+      </Slider>
 
       <p>
         We offer state-of-the-art equipment and expert trainers to help you

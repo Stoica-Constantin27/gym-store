@@ -4,118 +4,201 @@
       "id": 1,
       "name": "Whey Protein",
       "price": 40,
-      "image": "whey-protein.jpg"
+      "image": "product-images/whey-protein.jpg",
+      "description": "High-quality protein powder to support muscle growth and recovery."
     },
     {
       "id": 2,
       "name": "Creatine Monohydrate",
       "price": 30,
-      "image": "creatine-monohydrate.jpg"
+      "image": "product-images/creatine-monohydrate.jpg",
+      "description": "Enhances strength and performance during intense workouts."
     },
-    { "id": 3, "name": "BCAA Powder", "price": 25, "image": "bcaa-powder.jpg" },
+    {
+      "id": 3,
+      "name": "BCAA Powder",
+      "price": 25,
+      "image": "product-images/bcaa-powder.jpg",
+      "description": "Branched-chain amino acids to reduce fatigue and improve muscle recovery."
+    },
     {
       "id": 4,
       "name": "Casein Protein",
       "price": 45,
-      "image": "casein-protein.jpg"
+      "image": "product-images/casein-protein.jpg",
+      "description": "Slow-digesting protein to sustain muscle repair overnight."
     },
     {
       "id": 5,
-      "name": "Pre-Workout Supplement",
+      "name": "Pre-Workout",
       "price": 35,
-      "image": "pre-workout.jpg"
+      "image": "product-images/pre-workout.jpg",
+      "description": "Boosts energy, focus, and endurance for intense workouts."
     },
     {
       "id": 6,
       "name": "Post-Workout Recovery",
       "price": 50,
-      "image": "post-workout-recovery.jpg"
+      "image": "product-images/post-workout-recovery.jpg",
+      "description": "Designed to accelerate muscle recovery after training."
     },
     {
       "id": 7,
       "name": "Multivitamins",
       "price": 20,
-      "image": "multivitamins.jpg"
+      "image": "product-images/multivitamin-supplement.jpeg",
+      "description": "A blend of essential vitamins and minerals for daily health support."
     },
     {
       "id": 8,
       "name": "Omega-3 Fish Oil",
       "price": 25,
-      "image": "omega-3-fish-oil.jpg"
+      "image": "product-images/omega-3-fish-oil.jpg",
+      "description": "Supports heart health and reduces inflammation with essential fatty acids."
     },
-    { "id": 9, "name": "Glutamine", "price": 28, "image": "glutamine.jpg" },
+    {
+      "id": 9,
+      "name": "Glutamine",
+      "price": 28,
+      "image": "product-images/glutamine.jpg",
+      "description": "Aids muscle recovery and supports immune function after exercise."
+    },
     {
       "id": 10,
       "name": "ZMA Supplement",
       "price": 22,
-      "image": "zma-supplement.jpg"
+      "image": "product-images/zma-supplement.jpg",
+      "description": "Promotes muscle recovery and improves sleep quality."
     },
     {
       "id": 11,
       "name": "Joint Support",
       "price": 32,
-      "image": "joint-support.jpg"
+      "image": "product-images/joint-support.jpg",
+      "description": "Helps maintain joint health and mobility, especially under stress."
     }
   ],
   "equipment": [
-    { "id": 1, "name": "Dumbbells", "price": 50, "image": "dumbbells.jpg" },
-    { "id": 2, "name": "Kettlebell", "price": 40, "image": "kettlebell.jpg" },
     {
-      "id": 3,
+      "id": 12,
+      "name": "Dumbbells",
+      "price": 50,
+      "image": "product-images/dumbbells.jpg",
+      "description": "Versatile weights for building strength and toning muscles."
+    },
+    {
+      "id": 13,
+      "name": "Kettlebell",
+      "price": 40,
+      "image": "product-images/kettlebell.jpg",
+      "description": "Great for strength, endurance, and cardio exercises."
+    },
+    {
+      "id": 14,
       "name": "Resistance Bands",
       "price": 15,
-      "image": "resistance-bands.jpg"
+      "image": "product-images/resistance-bands.jpg",
+      "description": "Portable bands for strength training and stretching exercises."
     },
-    { "id": 4, "name": "Barbell", "price": 80, "image": "barbell.jpg" },
-    { "id": 5, "name": "Treadmill", "price": 700, "image": "treadmill.jpg" },
     {
-      "id": 6,
+      "id": 15,
+      "name": "Barbell",
+      "price": 80,
+      "image": "product-images/barbell.jpg",
+      "description": "A sturdy bar for lifting heavy weights in various exercises."
+    },
+    {
+      "id": 16,
+      "name": "Treadmill",
+      "price": 700,
+      "image": "product-images/treadmill.jpg",
+      "description": "High-quality machine for running or walking indoors."
+    },
+    {
+      "id": 17,
       "name": "Exercise Bench",
       "price": 120,
-      "image": "exercise-bench.jpg"
+      "image": "product-images/exercise-bench.jpg",
+      "description": "Adjustable bench for a wide range of strength exercises."
     },
-    { "id": 7, "name": "Jump Rope", "price": 10, "image": "jump-rope.jpg" },
     {
-      "id": 8,
+      "id": 18,
+      "name": "Jump Rope",
+      "price": 10,
+      "image": "product-images/jump-rope.jpg",
+      "description": "Simple and effective tool for cardio and agility training."
+    },
+    {
+      "id": 19,
       "name": "Medicine Ball",
       "price": 35,
-      "image": "medicine-ball.jpg"
+      "image": "product-images/medicine-ball.jpg",
+      "description": "Great for full-body exercises, core strengthening, and balance."
     },
-    { "id": 9, "name": "Spin Bike", "price": 500, "image": "spin-bike.jpg" }
+    {
+      "id": 20,
+      "name": "Spin Bike",
+      "price": 500,
+      "image": "product-images/spin-bike.jpg",
+      "description": "High-performance stationary bike for intense cardio workouts."
+    }
   ],
   "clothes": [
     {
-      "id": 1,
+      "id": 21,
       "name": "Workout Shorts",
       "price": 20,
-      "image": "workout-shorts.jpg"
+      "image": "product-images/workout-shorts.jpg",
+      "description": "Lightweight and comfortable shorts for active workouts."
     },
-    { "id": 2, "name": "Gym T-Shirt", "price": 15, "image": "gym-tshirt.jpg" },
     {
-      "id": 3,
+      "id": 22,
+      "name": "Gym T-Shirt",
+      "price": 15,
+      "image": "product-images/gym-tshirt.jpg",
+      "description": "Breathable, moisture-wicking T-shirt for optimal workout performance."
+    },
+    {
+      "id": 23,
       "name": "Compression Leggings",
       "price": 30,
-      "image": "compression-leggings.jpg"
+      "image": "product-images/compression-leggings.jpg",
+      "description": "Tight-fitting leggings to improve blood flow and muscle support."
     },
     {
-      "id": 4,
+      "id": 24,
       "name": "Running Jacket",
       "price": 50,
-      "image": "running-jacket.jpg"
+      "image": "product-images/running-jacket.jpg",
+      "description": "Lightweight jacket designed for comfort and mobility during runs."
     },
-    { "id": 5, "name": "Sweatband", "price": 10, "image": "sweatband.jpg" },
-    { "id": 6, "name": "Gym Socks", "price": 8, "image": "gym-socks.jpg" },
     {
-      "id": 7,
+      "id": 25,
+      "name": "Sweatband",
+      "price": 10,
+      "image": "product-images/sweatband.jpg",
+      "description": "Absorbs sweat during intense workouts, keeping you dry."
+    },
+    {
+      "id": 26,
+      "name": "Gym Socks",
+      "price": 8,
+      "image": "product-images/gym-socks.jpg",
+      "description": "Comfortable and durable socks designed for gym workouts."
+    },
+    {
+      "id": 27,
       "name": "Training Hoodie",
       "price": 45,
-      "image": "training-hoodie.jpg"
+      "image": "product-images/training-hoodie.jpg",
+      "description": "Warm, comfortable hoodie for training and casual wear."
     },
     {
-      "id": 8,
+      "id": 28,
       "name": "Fitness Tank Top",
       "price": 25,
-      "image": "fitness-tank-top.jpg"
+      "image": "product-images/fitness-tank-top.jpg",
+      "description": "Sleeveless top designed for comfort and ventilation during workouts."
     }
   ]
 }

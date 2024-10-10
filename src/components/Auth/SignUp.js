@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/auth.css";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -11,6 +12,13 @@ const SignUp = () => {
 
     if (password !== confirmPassword) {
       setError("Passwords do not match");
+      return;
+    }
+
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+
+    if (storedUser && storedUser.email === email) {
+      setError("User already exists with this email");
       return;
     }
 
@@ -41,6 +49,7 @@ const SignUp = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          autoComplete="new-password"
         />
         <input
           type="password"
@@ -48,6 +57,7 @@ const SignUp = () => {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
+          autoComplete="new-password"
         />
         {error && <p className="error">{error}</p>}
         <button type="submit">Sign Up</button>
